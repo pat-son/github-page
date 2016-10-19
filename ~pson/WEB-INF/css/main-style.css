@@ -1,0 +1,177 @@
+/*** General styles ***/
+/* styles that don't apply to a specific section */
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 18px;
+    line-height: 160%;
+}
+
+a:link {
+	color: #0a8bdb;
+	text-decoration: none ;
+}
+
+a:visited {
+	color: #6d3a98 ;
+	text-decoration: none ;
+}
+
+a:hover {
+	text-decoration: underline ;
+}
+
+h2 {
+    color: #800D0D;
+    font-weight: bold;
+}
+
+/* Some flex settings below. */
+/* explicit 100% height for body/html */
+html, body {
+    height: 100%;
+}
+
+/* wrapper around all content for flexbox */
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* main content grows to fill as much space as possible,
+   keeping the footer at the bottom edge of the window. */
+#main-content {
+    flex: 1;
+}
+
+
+/*** Navbar styles ***/
+/* Formerly "Header styles" */
+
+nav {
+    color: white;
+    background-color: #ff4d4d;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+h1 {
+    font-weight: bold;
+    display: inline;
+    vertical-align: middle;
+    font-size: 4em;
+    color: white;
+}
+
+#header-portrait {
+    width: 100px;
+    border-radius: 100%;
+    margin: 10px 0;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+/*** Project Index styles ***/
+
+.jumbotron {
+    background-color: #ddd;
+    overflow: hidden;
+    padding-top: 0;
+}
+
+.jumbo-inactive {
+    display: none;
+}
+
+.project-item:nth-child(even) {
+    background-color: white;
+}
+
+.project-item:nth-child(odd) {
+    background-color: #e6e6e6;
+}
+
+.project-item:first-child {
+    border-top-right-radius: 10px;
+}
+
+.project-item:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.project-item h3 {
+    margin: 0;
+}
+
+.project-item {
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.project-item:hover {
+    border: 2px inset #ff4d4d;
+    padding: 3px;
+}
+
+.project-item:hover .p-icon {
+    color: #ff4d4d
+}
+
+.p-icon {
+    /*display: block;*/
+    float: right;
+    margin-right: 5px;
+}
+
+.project-info {
+    display: none;
+}
+
+.project-info-title {
+    display: inline-block;
+}
+
+/*** Styles for footer ***/
+
+footer {
+    width: 75%;
+    margin: 50px 0 20px;
+    color: #666;
+    font-size: 16px;
+}
+
+footer a:link {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+footer a:visited {
+    color: inherit;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* change the color of the HTML5/CSS3 icons on hover just for fun */
+footer a:hover .fa-html5 {
+    color: #F16529;
+    transition: color .3s ease-in;
+}
+
+footer a:hover .fa-css3 {
+    color: #1C88C7;
+    transition: color .3s ease-in;
+}
